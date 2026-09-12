@@ -357,6 +357,43 @@ export const experiences = [
     logoPadding: false,
     responsibility: [
       [
+        { text: "Developed " },
+        { text: "RBAC auth with scoped roles", bold: true },
+        {
+          text: " for organizers, staff, and affiliates across the ticketing platform.",
+        },
+      ],
+      [
+        { text: "Built end-to-end APIs for the " },
+        { text: "affiliate ticket purchase program", bold: true },
+        {
+          text: ", from affiliate links and attribution to checkout and payouts.",
+        },
+      ],
+      [
+        { text: "Built " },
+        { text: "marketing email automations", bold: true },
+        { text: " with " },
+        { text: "cron jobs and notifications", bold: true },
+        {
+          text: " for campaigns, reminders, and post-purchase follow-ups.",
+        },
+      ],
+      [
+        { text: "Built a " },
+        { text: "custom website embed", bold: true },
+        {
+          text: " B2B clients drop into their own sites to sell tickets directly.",
+        },
+      ],
+      [
+        { text: "Handled " },
+        { text: "high-traffic on-sales", bold: true },
+        {
+          text: " with rate limiting, caching, and queueing to keep checkout fast under load.",
+        },
+      ],
+      [
         { text: "Building backend services with " },
         { text: "Hono", bold: true },
         {
@@ -368,11 +405,6 @@ export const experiences = [
         { text: "Meta tracking APIs", bold: true },
         {
           text: " (Conversions API / Pixel) for attribution, retargeting, and growth analytics across the funnel.",
-        },
-      ],
-      [
-        {
-          text: "Shipping product features across the ticketing platform — APIs, webhooks, and real-time event flows.",
         },
       ],
     ],

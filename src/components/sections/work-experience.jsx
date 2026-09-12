@@ -176,7 +176,7 @@ function ExperienceItem({ experience, index = 0 }) {
         )}
       </div>
 
-      <div className="relative min-w-0 space-y-4 before:absolute before:left-3 before:top-1 before:h-[calc(100%-0.5rem)] before:w-px before:bg-black/[0.1] dark:before:bg-white/[0.1]">
+      <div className="relative min-w-0 space-y-4 before:absolute before:left-[24px] before:top-[36px] before:h-[calc(100%-36px)] before:w-px before:bg-black/[0.1] dark:before:bg-white/[0.1]">
         <ExperiencePositionItem experience={experience} />
       </div>
     </motion.div>
@@ -211,13 +211,13 @@ function ExperiencePositionItem({ experience }) {
         disabled={!hasDescription}
         className={cn(
           "group block w-full min-w-0 select-none text-left",
-          "relative rounded-lg transition-colors",
+          "relative rounded-lg p-3 transition-colors",
           hasDescription && "hover:bg-black/[0.02] dark:hover:bg-white/[0.03]",
           !hasDescription && "cursor-default"
         )}
       >
         <div className="relative z-[1] mb-1 flex items-start gap-3 text-base">
-          <div className="flex size-6 shrink-0 items-center justify-center rounded-lg border border-black/[0.08] bg-black/[0.03] text-muted-foreground dark:border-white/[0.08] dark:bg-white/[0.06] [&_svg]:size-3.5">
+          <div className="relative z-[2] flex size-6 shrink-0 items-center justify-center rounded-lg border border-black/[0.08] bg-background text-muted-foreground dark:border-white/[0.08] [&_svg]:size-3.5">
             <Icon />
           </div>
 
@@ -291,7 +291,7 @@ function ExperiencePositionItem({ experience }) {
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="w-full min-w-0 overflow-hidden"
           >
-            <ul className="w-full min-w-0 list-disc space-y-1.5 pt-2 pl-[3.25rem] font-space-mono text-xs leading-relaxed text-muted-foreground marker:text-muted-foreground/40 md:space-y-2 md:text-sm">
+            <ul className="w-full min-w-0 list-disc space-y-1.5 pt-2 pl-16 font-space-mono text-xs leading-relaxed text-muted-foreground marker:text-muted-foreground/40 md:space-y-2 md:text-sm">
               {responsibility.map((bullet, i) => (
                 <li key={i} className="break-words [overflow-wrap:anywhere]">
                   <ResponsibilitySegments bullet={bullet} />
@@ -303,7 +303,7 @@ function ExperiencePositionItem({ experience }) {
       </AnimatePresence>
 
       {techstacks.length > 0 && (
-        <div className="flex flex-wrap gap-1.5 pt-3 pl-9">
+        <div className="flex flex-wrap gap-1.5 pt-3 pl-12">
           {techstacks.map((tech, i) => (
             <TechBadge key={i} name={tech} />
           ))}

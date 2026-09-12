@@ -20,7 +20,7 @@ const ExperienceCard = ({ role, company, year, responsibilities }) => {
   return (
     <>
       <motion.header initial={false} onClick={handleToggle}>
-        <div className="w-full border-2 cursor-pointer select-none border-primary rounded-md mb-2 p-4 hover:bg-primary hover:text-secondary">
+        <div className="w-full border-2 select-none border-primary rounded-md mb-2 p-4 hover:bg-primary hover:text-secondary">
           <h1>{role}</h1>
           <p className="text-sm">{year}</p>
         </div>

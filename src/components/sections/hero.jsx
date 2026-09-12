@@ -296,7 +296,7 @@ function HackathonsHoverLink() {
 
   return (
     <span
-      className="relative cursor-pointer"
+      className="relative"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={() => setIsHovered(false)}
       onMouseMove={handleMouseMove}

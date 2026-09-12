@@ -32,7 +32,7 @@ const TruncatedTitle = ({ title, maxLength = 60 }) => {
 
       <div className="md:hidden">
         <h2
-          className="text-sm font-bold cursor-pointer"
+          className="text-sm font-bold"
           onClick={() => setIsExpanded(!isExpanded)}
         >
           {displayTitle}

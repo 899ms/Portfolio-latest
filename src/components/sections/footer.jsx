@@ -90,7 +90,7 @@ const Footer = () => {
             <SeikoWatchModal>
               <button
                 type="button"
-                className="w-fit cursor-pointer text-left transition-colors hover:text-foreground focus:outline-none focus-visible:text-foreground"
+                className="w-fit text-left transition-colors hover:text-foreground focus:outline-none focus-visible:text-foreground"
                 aria-label="Open Seiko analog watch"
               >
                 {formattedDate} &middot; {formattedTime}

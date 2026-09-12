@@ -37,7 +37,6 @@ const GitHubContributionGraph = ({ data = [], lifetimeTotal }) => {
             <ContributionGraphCalendar>
               {({ activity, dayIndex, weekIndex }) => (
                 <g
-                  className="cursor-pointer"
                   onMouseEnter={(e) => handleMouseEnter(e, activity)}
                   onMouseLeave={handleMouseLeave}
                 >
