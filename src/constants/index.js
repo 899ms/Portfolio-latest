@@ -478,17 +478,6 @@ export const projects = [
     github: "ShivaBhattacharjee/KeyZen",
   },
   {
-    title: "taptickit",
-    category: "Open Source · npm",
-    description:
-      "Haptic feedback for the mobile web with zero dependencies. React, Vue, Svelte, and vanilla APIs with presets like success, warning, selection, and impact-style taps via the Vibration API.",
-    techstacks: ["TypeScript", "React", "Vue", "Svelte"],
-    status: "active",
-    link: "https://www.npmjs.com/package/taptickit",
-    illustration: "taptickit",
-    github: "thor-op/taptickit",
-  },
-  {
     title: "Image Sonification",
     category: "Research Project · Web App",
     description:
